@@ -8,13 +8,13 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ilialuck/frontend-project-46.git"
   },
-  "author": "",
+  "author": "Ilia Lukianov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ilialuck/frontend-project-46/issues"
