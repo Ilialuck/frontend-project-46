@@ -13,3 +13,8 @@ test('json', () => {
   const expected = readFile('result.txt');
   expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'))).toEqual(expected);
 });
+
+test('yaml', () => {
+  const expected = readFile('result.txt');
+  expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'))).toEqual(expected);
+});

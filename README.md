@@ -5,3 +5,5 @@
 [![NodeCI](https://github.com/Ilialuck/frontend-project-46/workflows/NodeCI/badge.svg)](https://github.com/Ilialuck/frontend-project-46/actions)
 
 [![asciicast](https://asciinema.org/a/dm5WxPkbo2FzNnOKZNfrxkmYk.svg)](https://asciinema.org/a/dm5WxPkbo2FzNnOKZNfrxkmYk)
+
+[![asciicast](https://asciinema.org/a/RjycRfCyLSJXR61ie8flJT7ao.svg)](https://asciinema.org/a/RjycRfCyLSJXR61ie8flJT7ao)
