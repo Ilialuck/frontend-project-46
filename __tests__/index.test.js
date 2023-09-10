@@ -23,3 +23,8 @@ test('plain', () => {
   const expected = readFile('plainResult.txt');
   expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'plain')).toEqual(expected);
 });
+
+test('JSON', () => {
+  const expected = readFile('JSONresult.txt');
+  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'json')).toEqual(expected);
+});
