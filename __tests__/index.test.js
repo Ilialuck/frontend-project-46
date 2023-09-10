@@ -11,10 +11,15 @@ const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 
 test('json', () => {
   const expected = readFile('result.txt');
-  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'))).toEqual(expected);
+  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'stylish')).toEqual(expected);
 });
 
 test('yaml', () => {
   const expected = readFile('result.txt');
-  expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'))).toEqual(expected);
+  expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'), 'stylish')).toEqual(expected);
+});
+
+test('plain', () => {
+  const expected = readFile('plainResult.txt');
+  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'plain')).toEqual(expected);
 });

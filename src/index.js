@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 import path from 'path';
 import getParsedData from './parser.js';
-import buildTree from './buildTree.js';
+import buildDifferencesTree from './buildTree.js';
 import format from './formatters/index.js';
 
 const getFileData = (filename) => {
@@ -20,7 +20,7 @@ const genDiff = (file1, file2, type = 'stylish') => {
   const objFromData1 = getParsedData(data1, file1format);
   const objFromData2 = getParsedData(data2, file2format);
 
-  return format(buildTree(objFromData1, objFromData2), type);
+  return format(buildDifferencesTree(objFromData1, objFromData2), type);
 };
 
 export default genDiff;
