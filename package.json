@@ -4,7 +4,7 @@
     "gendiff": "bin/gendiff.js"
   },
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Ilialuck/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Ilialuck/frontend-project-46/actions)",
+  "description": "Difference Calculator - a program that determines the difference between two data structures",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
