@@ -20,7 +20,7 @@ const plain = (tree) => {
           case 'nested':
             return iter(diff.children, keyPath);
           case 'added':
-            return `Property '${keyPath}' was added with value: ${getPlainValue(diff.value2)}`;
+            return `Property '${keyPath}' was added with value: ${getPlainValue(diff.value)}`;
           case 'deleted':
             return `Property '${keyPath}' was removed`;
           case 'changed':
