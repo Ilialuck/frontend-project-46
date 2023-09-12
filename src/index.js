@@ -6,21 +6,16 @@ import format from './formatters/index.js';
 
 const getFileData = (filename) => {
   const filePath = path.resolve(process.cwd(), filename);
-  const data = readFileSync(filePath, 'utf-8');
+  const fileformat = path.extname(filename).slice(1);
+  const getReadFile = readFileSync(filePath, 'utf-8');
+  const data = getParsedData(getReadFile, fileformat);
   return data;
 };
 
 const genDiff = (file1, file2, type = 'stylish') => {
-  const file1format = path.extname(file1).slice(1);
-  const file2format = path.extname(file2).slice(1);
-
   const data1 = getFileData(file1);
   const data2 = getFileData(file2);
-
-  const objFromData1 = getParsedData(data1, file1format);
-  const objFromData2 = getParsedData(data2, file2format);
-
-  return format(buildDifferencesTree(objFromData1, objFromData2), type);
+  return format(buildDifferencesTree(data1, data2), type);
 };
 
 export default genDiff;
