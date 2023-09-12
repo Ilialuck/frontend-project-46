@@ -4,7 +4,7 @@
 [![Actions Status](https://github.com/Ilialuck/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Ilialuck/frontend-project-46/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1657568a8a91e1c96f67/maintainability)](https://codeclimate.com/github/Ilialuck/frontend-project-46/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1657568a8a91e1c96f67/test_coverage)](https://codeclimate.com/github/Ilialuck/frontend-project-46/test_coverage)
-[![Tests-and-linter](https://github.com/Ilialuck/frontend-project-46/workflows/NodeCI/badge.svg)](https://github.com/Ilialuck/frontend-project-46/actions)
+[![Tests-and-linter](https://github.com/Ilialuck/frontend-project-46/workflows/Tests-and-linter/badge.svg)](https://github.com/Ilialuck/frontend-project-46/actions)
 
 ## Description
 Difference Calculator is a program that determines the difference between two data structures. This is a popular task for which there are many online services, such as http://www.jsondiff.com/. Such a mechanism is used when outputting tests or automatically tracking changes in configuration files.
