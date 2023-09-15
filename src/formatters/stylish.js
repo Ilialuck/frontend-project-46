@@ -26,9 +26,9 @@ const stylish = (data, depth = 1) => {
       case 'added':
         return `${indent}+ ${diff.key}: ${getValue(diff.value, depth + 1)}`;
       case 'deleted':
-        return `${indent}- ${diff.key}: ${getValue(diff.value1, depth + 1)}`;
+        return `${indent}- ${diff.key}: ${getValue(diff.value, depth + 1)}`;
       case 'unchanged':
-        return `${indent}  ${diff.key}: ${getValue(diff.value1, depth + 1)}`;
+        return `${indent}  ${diff.key}: ${getValue(diff.value, depth + 1)}`;
       case 'changed':
         return [
           `${indent}- ${diff.key}: ${getValue(diff.value1, depth + 1)}`,

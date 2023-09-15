@@ -11,14 +11,14 @@ const buildDifferencesTree = (data1, data2) => {
       return { key, value: data2[key], type: 'added' };
     }
     if (!Object.hasOwn(data2, key)) {
-      return { key, value1: data1[key], type: 'deleted' };
+      return { key, value: data1[key], type: 'deleted' };
     }
     if (!_.isEqual(data1[key], data2[key])) {
       return {
         key, value1: data1[key], value2: data2[key], type: 'changed',
       };
     }
-    return { key, value1: data1[key], type: 'unchanged' };
+    return { key, value: data1[key], type: 'unchanged' };
   });
 
   return diff;

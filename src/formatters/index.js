@@ -9,8 +9,8 @@ export default (data, type) => {
     case 'plain':
       return plain(data);
     case 'json':
-      return JSON.stringify(data);
+      return JSON.stringify(data, null, ' ');
     default:
-      return stylish(data);
+      throw new Error(`Unknown type of formatter - ${type}`);
   }
 };

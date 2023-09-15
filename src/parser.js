@@ -9,7 +9,7 @@ const getParsedData = (data, format) => {
     case 'yaml':
       return yaml.load(data);
     default:
-      throw new Error(`Unknown ${format}!`);
+      throw new Error(`Unknown format - ${format}!`);
   }
 };
 
